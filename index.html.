@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onontdekte Smaken - Kookboeken</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #f0f0f0;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        nav a:hover {
+            color: #2E7D32;
+        }
+        .hero {
+            background-image: url('https://via.placeholder.com/1200x400');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .hero button {
+            padding: 15px 30px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .hero button:hover {
+            background-color: #2E7D32;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .container h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+        .recipes {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .recipe-card {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            flex: 1 1 calc(33.333% - 20px);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .recipe-card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+        .recipe-card h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Onontdekte Smaken</h1>
+        <p>50 Verrassende Recepten die je Moet Proberen</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">Over Ons</a>
+        <a href="#recipes">Recepten</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Welkom bij Onontdekte Smaken</h1>
+        <p>Ontdek unieke recepten en geniet van smaken die je nooit eerder hebt geproefd.</p>
+        <button onclick="alert('Bestel nu jouw kookboek!')">Bestel Nu</button>
+    </section>
+
+    <section class="container" id="about">
+        <h2>Over Ons</h2>
+        <p>Bij Onontdekte Smaken geloven we in het combineren van unieke ingrediënten en verrassende technieken om gerechten te creëren die je nergens anders vindt. Ons kookboek bevat 50 originele recepten die speciaal zijn samengesteld om jouw smaakpapillen te prikkelen.</p>
+    </section>
+
+    <section class="container" id="recipes">
+        <h2>Onze Recepten</h2>
+        <div class="recipes">
+            <div class="recipe-card">
+                <img src="https://via.placeholder.com/300" alt="Recept 1">
+                <h3>Recept 1: Pompoenrisotto</h3>
+                <p>Een romige risotto met pompoen en salie.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://via.placeholder.com/300" alt="Recept 2">
+                <h3>Recept 2: Garnalen in Kokos</h3>
+                <p>Een heerlijk gerecht met garnalen en een kokos-limoensaus.</p>
+            </div>
+            <div class="recipe-card">
+                <img src="https://via.placeholder.com/300" alt="Recept 3">
+                <h3>Recept 3: Chocolade Avocado Mousse</h3>
+                <p>Een gezonde dessertoptie vol smaak.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Onontdekte Smaken | Alle rechten voorbehouden</p>
+    </footer>
+</body>
+</html>
