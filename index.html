@@ -9,143 +9,145 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #ffffff;
             color: #333;
         }
         header {
-            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            background: linear-gradient(to right, #53c68c, #34a853);
             color: white;
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         header h1 {
-            font-size: 2.8em;
+            font-size: 3em;
             margin: 0;
             font-weight: bold;
         }
         header p {
-            font-size: 1.2em;
+            font-size: 1.4em;
             margin-top: 10px;
         }
         nav {
             display: flex;
             justify-content: center;
             padding: 15px 0;
-            background-color: #fff;
+            background-color: #f8f9fa;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
         }
         nav a {
             text-decoration: none;
-            color: #4e54c8;
-            font-size: 1.1em;
-            margin: 0 15px;
+            color: #34a853;
+            font-size: 1.2em;
+            margin: 0 20px;
             font-weight: bold;
             transition: color 0.3s;
         }
         nav a:hover {
-            color: #8f94fb;
+            color: #2e7d32;
         }
         .hero {
             display: flex;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            background-image: url('https://raw.githubusercontent.com/<jouwgebruikersnaam>/<repositorynaam>/<branch>/verrassende-smaken.webp');
+            background-image: url('https://www.example.com/hero-image.jpg');
             background-size: cover;
             background-position: center;
-            height: 400px;
+            height: 450px;
             text-align: center;
             color: white;
             box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3);
         }
         .hero h1 {
-            font-size: 3em;
+            font-size: 4em;
             margin-bottom: 20px;
         }
         .hero p {
-            font-size: 1.5em;
+            font-size: 1.6em;
             margin-bottom: 30px;
         }
         .hero button {
-            padding: 15px 30px;
-            background-color: #4e54c8;
+            padding: 15px 35px;
+            background-color: #34a853;
             color: white;
             border: none;
-            border-radius: 8px;
-            font-size: 1.2em;
+            border-radius: 10px;
+            font-size: 1.4em;
             cursor: pointer;
             transition: background-color 0.3s;
         }
         .hero button:hover {
-            background-color: #8f94fb;
+            background-color: #2e7d32;
         }
         .container {
             max-width: 1200px;
-            margin: 50px auto;
-            padding: 20px;
+            margin: 60px auto;
+            padding: 30px;
         }
         .books {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+            gap: 25px;
         }
         .book-card {
             background: white;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .book-card:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         }
         .book-card img {
             width: 100%;
-            height: 250px;
+            height: 300px;
             object-fit: cover;
         }
         .book-card h3 {
-            font-size: 1.5em;
-            margin: 15px;
+            font-size: 1.6em;
+            margin: 20px;
             color: #333;
         }
         .book-card p {
-            margin: 0 15px 15px;
-            font-size: 1em;
-            color: #666;
+            margin: 0 20px 20px;
+            font-size: 1.1em;
+            color: #555;
         }
         .book-card button {
             display: block;
-            margin: 15px auto;
-            padding: 10px 20px;
-            background-color: #4e54c8;
+            margin: 15px auto 20px;
+            padding: 10px 25px;
+            background-color: #34a853;
             color: white;
             border: none;
-            border-radius: 8px;
-            font-size: 1em;
+            border-radius: 10px;
+            font-size: 1.1em;
             cursor: pointer;
             transition: background-color 0.3s;
         }
         .book-card button:hover {
-            background-color: #8f94fb;
+            background-color: #2e7d32;
         }
         footer {
-            background-color: #4e54c8;
+            background-color: #34a853;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 50px;
+            padding: 30px;
+            margin-top: 60px;
         }
         footer p {
             margin: 0;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Onontdekte Smaken</h1>
-        <p>Unieke Kookboeken voor Elke Gelegenheid</p>
+        <p>Kookboeken die Inspireren</p>
     </header>
 
     <nav>
@@ -157,27 +159,27 @@
 
     <section class="hero">
         <h1>Welkom bij Onontdekte Smaken</h1>
-        <p>Ervaar de luxe van koken met onze exclusieve boeken</p>
-        <button onclick="alert('Bekijk onze boeken nu!')">Bekijk Nu</button>
+        <p>Probeer onze exclusieve recepten vandaag nog</p>
+        <button onclick="alert('Bekijk onze boeken nu!')">Bekijk Boeken</button>
     </section>
 
     <section class="container" id="books">
-        <h2>Onze Exclusieve Boeken</h2>
+        <h2>Onze Populaire Boeken</h2>
         <div class="books">
             <div class="book-card">
-                <img src="/mnt/data/A_high-quality,_realistic_cookbook_cover_featuring.png" alt="Verrassende Smaken">
+                <img src="https://www.example.com/verrassende-smaken.jpg" alt="Verrassende Smaken">
                 <h3>Verrassende Smaken</h3>
                 <p>20 unieke recepten die je nergens anders vindt.</p>
                 <button>Bestel Nu</button>
             </div>
             <div class="book-card">
-                <img src="https://raw.githubusercontent.com/<jouwgebruikersnaam>/<repositorynaam>/<branch>/gezonde-lekkernijen.webp" alt="Gezonde Lekkernijen">
+                <img src="https://www.example.com/gezonde-lekkernijen.jpg" alt="Gezonde Lekkernijen">
                 <h3>Gezonde Lekkernijen</h3>
                 <p>20 gezonde recepten vol smaak en creativiteit.</p>
                 <button>Bestel Nu</button>
             </div>
             <div class="book-card">
-                <img src="https://raw.githubusercontent.com/<jouwgebruikersnaam>/<repositorynaam>/<branch>/wereldse-smaken.webp" alt="Wereldse Smaken">
+                <img src="https://www.example.com/wereldse-smaken.jpg" alt="Wereldse Smaken">
                 <h3>Wereldse Smaken</h3>
                 <p>20 recepten geïnspireerd door keukens wereldwijd.</p>
                 <button>Bestel Nu</button>
@@ -190,4 +192,5 @@
     </footer>
 </body>
 </html>
+
 
